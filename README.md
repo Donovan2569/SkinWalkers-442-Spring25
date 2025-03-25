@@ -1,2 +1,2 @@
-# Louisiana Tech CSC 442 Cyber Storm
+# SkinWalkers
 Different group projects can be found in the branches.
