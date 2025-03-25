@@ -1,2 +1,2 @@
 # SkinWalkers
-Different group projects can be found in the branches.
+CSC 442 Cyber Storm Group
