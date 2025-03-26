@@ -1,6 +1,6 @@
 import sys
-alphabet = {chr(i): i - ord('a') for i in range(ord('a'), ord('z') + 1)}
-Alphabet = {chr(i): i - ord('A') for i in range(ord('A'), ord('Z') + 1)}
+alphabet = {chr(i): i - ord('a') for i in range(ord('a'), ord('z') + 1)} # dictionary to map letters to numbers (lowercase)
+Alphabet = {chr(i): i - ord('A') for i in range(ord('A'), ord('Z') + 1)} # dictionary to map letters to numbers (uppercase)
 
 def wrong():
     print("Run file using: -e for encryption or -d for decryption followed by Key.")
