@@ -58,8 +58,8 @@ def user(Key):
             sys.exit(0)
 
 
-if len(sys.argv) == 3:
-    if sys.argv[1] == "-d" or sys.argv[1] == "-e":
-        user(sys.argv[2])
+if len(sys.argv) == 3: # checks that all 3 arguments were provided in command line
+    if sys.argv[1] == "-d" or sys.argv[1] == "-e": # checks for encypt/decrypt
+        user(sys.argv[2]) # the key
     else:
         wrong()
