@@ -1,4 +1,4 @@
-# Program 2: Viginere
+# Program 2: Vigenere
 # CSC 442: Intro to Cybersecurity - Group 4
 # 3/31/25
 
