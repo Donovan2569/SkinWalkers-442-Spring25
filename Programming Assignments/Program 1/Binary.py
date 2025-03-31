@@ -1,3 +1,7 @@
+# Program 1: Binary Decoder
+# CSC 442: Intro to Cybersecurity - Group 4
+# 3/31/25
+
 import sys
 # Decode a binary string into readable text
 def crack(text, n):
