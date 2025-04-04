@@ -9,9 +9,14 @@ FTP_PORT = 21
 FTP_DIR = "/"  # Target directory
 METHOD = 7  # Set METHOD to 7 for 7-bit method, 10 for 10-bit method
 
+#Username and Password
+user = "percypatterson"
+password = "himalayas"
+
 try:
     ftp = ftplib.FTP()
     ftp.connect(FTP_HOST, FTP_PORT)
+    ftp.login(user, password)
     files = []
     ftp.dir(FTP_DIR, files.append)
     ftp.quit()
