@@ -39,6 +39,9 @@ try:
                         perms += '0'
                     else:
                         perms += '1'
+                        
+                print("Permissions:", file[:10])  # Debug: Print extracted permissions
+                print("Binary Representation:", perms)  # Debug: Print converted binary string
                 
                 # For 7-bit method, check if first three bits are all 0
                 if METHOD == 7:
@@ -51,19 +54,19 @@ try:
                         binary += perms[-7:]
                 elif METHOD == 10:
                     binary += perms
+                    
+    print("Final Binary String:", binary)  # Debug: Print full binary string before conversion
     
     # Convert binary to ASCII
     message = ""
-    for i in range(0, len(binary), 8):
-        byte = binary[i:i+8]
-        if len(byte) == 8:  
-            num = 0
-            for j in range(8):
-                if byte[j] == '1':
-                    num += 2 ** (7-j)
+    bit_size = 7 if METHOD == 7 else 8  # Ensure correct bit chunking
+    for i in range(0, len(binary), bit_size):
+        byte = binary[i:i+bit_size]
+        if len(byte) == bit_size:
+            num = int(byte, 2)
             message += chr(num)
     
-    print(message.strip())
+    print("Decoded Message:", message.strip())  # Debug: Final decoded message
     
 except KeyboardInterrupt:
     print("\nProgram interrupted by user")
