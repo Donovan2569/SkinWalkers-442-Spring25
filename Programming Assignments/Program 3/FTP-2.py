@@ -4,7 +4,7 @@
 
 import ftplib
 
-FTP_HOST = "138.47.99.228"  # FTP server address
+FTP_HOST = "138.47.99.229"  # FTP server address
 FTP_PORT = 21
 FTP_DIR = "/"  # Target directory
 METHOD = 7  # Set METHOD to 7 for 7-bit method, 10 for 10-bit method
