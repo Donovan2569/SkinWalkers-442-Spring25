@@ -5,8 +5,8 @@ from time import time
 ip = "138.47.99.228"
 port = 31337
 
-DEBUG = True
-THRESHOLD = 0.1  # You'll change this after analyzing delays
+DEBUG = False # Change to TRUE for debug 
+THRESHOLD = 0.1  # Change based on delay
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((ip, port))
