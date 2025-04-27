@@ -32,7 +32,7 @@ for letter in cipher_bytes:
         pass
 
 ##### OPEN KEY FILE AND CONVERT TO BYTES ##### 
-key_file = "key2"
+key_file = "key"
 with open(key_file, "rb") as file_bytes:
     key_bytes = file_bytes.read()
 
