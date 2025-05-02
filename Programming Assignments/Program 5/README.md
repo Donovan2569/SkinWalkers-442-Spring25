@@ -1,6 +1,2 @@
 # TimeLock
-This program calculates the elapsed time from an epoch time to a current time. It then passes this elapsed time through
-a double MD5 function that hashes the elapsed time twice. A code is then extracted by obtaining the first two letters of
-the hash from left to right, and then the first two numbers from the hash right to left. The user can choose to provide
-both the epoch time and the current time, or the program will default to current time and epoch_time = "1999 12 31 23 59 59."
-The code that is provided will change every minute that passes.
+This program calculates the elapsed time from an epoch time to a current time. It then passes this elapsed time through a double MD5 function that hashes the elapsed time twice. A code is then extracted by obtaining the first two letters of the hash from left to right, and then the first two numbers from the hash right to left. The user can choose to provide both the epoch time and the current time, or the program will default to the system's current time and epoch_time = "1999 12 31 23 59 59." The code that is provided will change every minute that passes.
