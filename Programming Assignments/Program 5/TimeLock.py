@@ -37,4 +37,5 @@ elapsed = int((cur_time - epoch_time).total_seconds())
 
 elapsed -= elapsed % 60
 
-print(double_MD5(elapsed), end="\n", flush=True)
+sys.stdout.write(double_MD5(elapsed) + "\n")
+sys.stdout.flush()
